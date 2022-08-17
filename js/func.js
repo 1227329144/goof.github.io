@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    dropdownOpen();//璋冪敤
+    dropdownOpen();//调用
 });
 baguetteBox.run('.tz-gallery');
 function dropdownOpen() {
@@ -14,7 +14,7 @@ function dropdownOpen() {
 	// });
 }
 $('#ShowImage_Form').on('shown.bs.modal', function (e) { 
-	// 鍏抽敭浠ｇ爜锛屽娌″皢modal璁剧疆涓� block锛屽垯$modala_dialog.height() 涓洪浂 
+	// 关键代码，如没将modal设置为 block，则$modala_dialog.height() 为零 
 	$(this).css('display', 'block'); 
 	var modalHeight=$(window).height() / 2 - $('#ShowImage_Form .modal-dialog').height() / 2; 
 	$(this).find('.modal-dialog').css({ 
